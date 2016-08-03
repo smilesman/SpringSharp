@@ -21,6 +21,7 @@
 			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
 		</license>
 	</licenses>
+	
 	<properties>
 		<!-- 主要依赖库的版本定义 -->
 		<sharp.version>0.0.1-SNAPSHOT</sharp.version>
