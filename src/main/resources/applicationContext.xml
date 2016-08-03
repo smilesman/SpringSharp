@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa" 
+	xmlns:cache="http://www.springframework.org/schema/cache" 
+	xmlns:task="http://www.springframework.org/schema/task" 
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" 
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:repository="http://www.springframework.org/schema/data/repository"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+    http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+   	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+	http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+	"
+	default-lazy-init="true">
+     
+    <description>Spring公共配置</description>
+	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+	<context:component-scan base-package="lab.sharp" use-default-filters="false"
+		scoped-proxy="targetClass">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Component" />
+		<context:exclude-filter type="annotation" expression="org.springframework.web.servlet.config.annotation.EnableWebMvc" />
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+	</context:component-scan>
+     
+    <!--读取数据库配置文件-->
+     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
+	    <property name="locations">
+				<list>
+					<value>classpath:application.properties</value>
+					<value>classpath:jdbc.properties</value>
+					<value>classpath:log4j.properties</value>
+				</list>
+			</property>
+	</bean>
+	<bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
+		<!--慢SQL记录,参数可配置 -->
+		<property name="slowSqlMillis" value="10000" />
+		<property name="logSlowSql" value="true" />
+		<!-- StatFilter合并的功能 -->
+		<property name="mergeSql" value="true" />
+	</bean>
+	<bean id="log-filter" class="com.alibaba.druid.filter.logging.Log4jFilter">
+		<property name="statementExecutableSqlLogEnable" value="true" />
+		<property name="resultSetLogEnabled" value="false" />
+	</bean> 
+	<!-- 配置数据源  采用目前性能最高的Druid连接池     参考: https://github.com/alibaba/druid/wiki/配置_DruidDataSource参考配置 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+		
+	 	<!-- 配置初始化大小、最小、最大 -->
+		<property name="initialSize" value="${jdbc.initial.size}" />
+		<property name="minIdle" value="${jdbc.min.idle}" />
+		<property name="maxActive" value="${jdbc.max.active}" />
+		
+        <!-- 由外部事务管理器处理提交 -->
+		<property name="defaultAutoCommit" value="false" />
+		
+         <!-- 配置获取连接等待超时的时间 -->
+		<property name="maxWait" value="60000" />
+		
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		
+		<!-- 合并多个DruidDataSource的监控数据 -->
+		<property name="useGlobalDataSourceStat" value="true" />
+		
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+
+           <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+		<property name="poolPreparedStatements" value="false" />
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+		
+		 <!-- 配置监控统计拦截的filters，去掉后监控界面sql无法统计 -->
+		<property name="proxyFilters">
+			<list>
+				<ref bean="stat-filter" />
+				<ref bean="log-filter" />
+			</list>
+		</property>
+	</bean>
+	<!-- 与JPA Hibernate共享一个cacheManager -->
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+		<property name="cacheManager" ref="ehcache" />
+	</bean>
+	<bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation" value="classpath:ehcache-config.xml" />
+		<property name="shared" value="true" />
+		<property name="cacheManagerName" value="s2jh_cache_v_${build_version}" />
+	</bean>
+<!-- JPA Entity Manager 配置, 设置depends-on="cacheManager"，确保共享模式下优先加载Spring CacheManager -->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+		depends-on="cacheManager">
+		<property name="dataSource" ref="dataSource" />
+		<property name="persistenceUnitName" value="entityManager" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+				<property name="databasePlatform" value="${jpa.database.platform}" />
+			</bean>
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>lab.sharp.**.entity</value>
+			</list>
+		</property>
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.connection.autocommit">false</prop>
+				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.DefaultNamingStrategy</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate_hbm2ddl_auto}</prop>
+
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.use_structured_entries">true</prop>
+				<prop key="javax.persistence.sharedCache.mode">ENABLE_SELECTIVE</prop>  
+				
+				<!-- EhCache -->
+				<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</prop>
+				<prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.SingletonEhCacheProvider</prop>
+				<prop key="hibernate.cache.provider_configuration_file_resource_path">classpath:ehcache-config.xml</prop>
+
+				<prop key="org.hibernate.envers.default_schema">${hibernate_envers_default_schema}</prop>
+				<prop key="org.hibernate.envers.audit_table_prefix">aud_</prop>
+				<prop key="org.hibernate.envers.audit_table_suffix"></prop>
+				<prop key="org.hibernate.envers.do_not_audit_optimistic_locking_field">false</prop>
+				<prop key="org.hibernate.envers.global_with_modified_flag">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	
+		<!-- JPA 事务配置 -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+
+	<!-- Spring Data JPA配置 -->
+	<jpa:repositories base-package="lab.sharp.**.dao" transaction-manager-ref="transactionManager"
+		entity-manager-factory-ref="entityManagerFactory">
+		<repository:exclude-filter type="regex" expression="lab.sharp.core.*" />
+	</jpa:repositories>
+	<!-- Spring Cache配置 -->
+	<cache:annotation-driven />
+	
+</beans>
