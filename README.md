@@ -6,7 +6,7 @@ style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-FAMILY: -apple-system, 
 </H2>
 <P 
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-SIZE: 16px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; COLOR: rgb(51,51,51); MARGIN-TOP: 0px; LINE-HEIGHT: 24px">汇集当前主流开发技术，充分借鉴<A 
-href="https://github.com/springside">SpringSide</A>的核心设计思想，取其精华去其糟粕，在前人的基础上融汇自己的观点，搭建出一个更便于上手的开源后端管理系统。提供一个J2EE相关主流开源技术架构整合及一些企业应用基础通用功能和组件的设计实现的最佳实践和原型参考，在代码编写上秉承简单而不简约的选材思路，将内心热衷的单一职责原则贯彻到底，做到模块化设计，流水线式生产，实现高内聚，低耦合的指导方针，让每个类“专注做一件事”。</P>
+href="https://github.com/springside"  target= "_blank">SpringSide</A>的核心设计思想，取其精华去其糟粕，在前人的基础上融汇自己的观点，搭建出一个更便于上手的开源后端管理系统。提供一个J2EE相关主流开源技术架构整合及一些企业应用基础通用功能和组件的设计实现的最佳实践和原型参考，在代码编写上秉承简单而不简约的选材思路，将内心热衷的单一职责原则贯彻到底，做到模块化设计，流水线式生产，实现高内聚，低耦合的指导方针，让每个类“专注做一件事”。</P>
 <H3 
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-SIZE: 1.25em; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; COLOR: rgb(51,51,51); MARGIN-TOP: 24px; LINE-HEIGHT: 1.25"><A 
 aria-hidden=true id=user-content-项目托管同步更新站点列表 class=anchor 
