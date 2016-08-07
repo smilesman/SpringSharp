@@ -1,4 +1,3 @@
-<HTML><HEAD><TITLE>ReadME</TITLE>
 <META content="text/html; charset=unicode" http-equiv=Content-Type>
 <META name=GENERATOR content="MSHTML 10.00.9200.16866"></HEAD>
 <BODY>
