@@ -1,3 +1,5 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>ReadME</TITLE>
 <META content="text/html; charset=unicode" http-equiv=Content-Type>
 <META name=GENERATOR content="MSHTML 10.00.9200.16866"></HEAD>
 <BODY>
@@ -33,9 +35,9 @@ style="BOX-SIZING: border-box">http://www.svnchina.com/</SPAN>SpringSharp</FONT>
 <H3 
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-SIZE: 1.25em; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; MARGIN-TOP: 24px; LINE-HEIGHT: 1.25"><SPAN 
 style="COLOR: rgb(51,51,51)"><A aria-hidden=true 
-id=user-content-个人空间-httpmyoschinanets2jh class=anchor 
+id=user-content-个人空间- class=anchor 
 style="BOX-SIZING: border-box; FLOAT: left; COLOR: rgb(64,120,192); MARGIN-LEFT: -20px; TEXT-DECORATION: none; LINE-HEIGHT: 1; PADDING-RIGHT: 4px; BACKGROUND-COLOR: transparent" 
-href="https://github.com/smilesman/SpringSharp#个人空间-httpmyoschinanets2jh"><SVG 
+href="https://github.com/smilesman/SpringSharp#个人空间-"><SVG 
 aria-hidden=true class="octicon octicon-link" height="16" version="1.1" 
 viewbox="0 0 16 16" width="16"><PATH 
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></PATH></SVG></A>个人空间：</SPAN><SPAN 
@@ -44,20 +46,13 @@ style="BOX-SIZING: border-box">http://</SPAN>xinglingxiao.com</A></SPAN> </H3>
 <BLOCKQUOTE 
 style="BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; COLOR: rgb(119,119,119); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 1em; MARGIN: 0px 0px 16px; BORDER-LEFT: rgb(221,221,221) 0.25em solid; LINE-HEIGHT: 24px; PADDING-RIGHT: 1em">
   <P style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0px; MARGIN-TOP: 0px"><SPAN 
-  style="BOX-SIZING: border-box; FONT-WEIGHT: 600">提示</SPAN>：为了方便用户区分链接资源是外部和内部，文档特别以<A 
-  style="BOX-SIZING: border-box; COLOR: rgb(64,120,192); TEXT-DECORATION: none; BACKGROUND-COLOR: transparent" 
-  href="https://camo.githubusercontent.com/0b706350b94a73b257b6799aec36bdd17ac3be99/687474703a2f2f6769742e6f736368696e612e6e65742f786175746c782f73326a68346e65742f7261772f6d61737465722f7372632f6d61696e2f7765626170702f646f63732f6d61726b646f776e2f696d616765732f6c696e6b2e676966" 
-  target=_blank><IMG 
-  style="BORDER-TOP-STYLE: none; BOX-SIZING: content-box; MAX-WIDTH: 100%; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none" 
-  alt=link 
-  src="b81e7c3fc22d805b582c562585906532_6285_files/2264b486853ab569ffb6c69594f93079.gif" 
-  data-canonical-src="http://git.oschina.net/xautlx/s2jh4net/raw/master/src/main/webapp/docs/markdown/images/link.gif"></A>标识：链接前面有此图标说明是外部链接，如果你已经熟悉相关概念可以忽略点击；没有此标识说明是文档内部链接，建议点击访问以完整查阅项目文档。 
+  style="BOX-SIZING: border-box; FONT-WEIGHT: 600">提示</SPAN>：为了方便用户区分链接资源是外部和内部，文档特别以⇒标识：链接前面有此图标说明是外部链接，如果你已经熟悉相关概念可以忽略点击；没有此标识说明是文档内部链接，建议点击访问以完整查阅项目文档。 
   </P></BLOCKQUOTE>
 <H2 
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; BORDER-BOTTOM: rgb(238,238,238) 1px solid; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0.3em; MARGIN-TOP: 24px; LINE-HEIGHT: 1.25"><A 
 aria-hidden=true id=user-content-框架特色 class=anchor 
 style="BOX-SIZING: border-box; FLOAT: left; COLOR: rgb(64,120,192); MARGIN-LEFT: -20px; TEXT-DECORATION: none; LINE-HEIGHT: 1; PADDING-RIGHT: 4px; BACKGROUND-COLOR: transparent" 
-href="https://github.com/xautlx/s2jh4net#框架特色"><SVG aria-hidden=true 
+href=""><SVG aria-hidden=true 
 class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" 
 width="16"><PATH 
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></PATH></SVG></A>框架特色 
@@ -83,7 +78,7 @@ style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-SIZE: 16px; FONT-FAMILY
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; BORDER-BOTTOM: rgb(238,238,238) 1px solid; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0.3em; MARGIN-TOP: 24px; LINE-HEIGHT: 1.25"><A 
 aria-hidden=true id=user-content-技术架构 class=anchor 
 style="BOX-SIZING: border-box; FLOAT: left; COLOR: rgb(64,120,192); MARGIN-LEFT: -20px; TEXT-DECORATION: none; LINE-HEIGHT: 1; PADDING-RIGHT: 4px; BACKGROUND-COLOR: transparent" 
-href="https://github.com/xautlx/s2jh4net#技术架构"><SVG aria-hidden=true 
+href=""><SVG aria-hidden=true 
 class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" 
 width="16"><PATH 
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></PATH></SVG></A>技术架构 
@@ -100,7 +95,7 @@ style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-SIZE: 16px; FONT-FAMILY
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; BORDER-BOTTOM: rgb(238,238,238) 1px solid; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0.3em; MARGIN-TOP: 24px; LINE-HEIGHT: 1.25"><A 
 aria-hidden=true id=user-content-javajee核心组件 class=anchor 
 style="BOX-SIZING: border-box; FLOAT: left; COLOR: rgb(64,120,192); MARGIN-LEFT: -20px; TEXT-DECORATION: none; LINE-HEIGHT: 1; PADDING-RIGHT: 4px; BACKGROUND-COLOR: transparent" 
-href="https://github.com/xautlx/s2jh4net/blob/master/src/main/webapp/docs/markdown/%E6%8A%80%E6%9C%AF%E5%88%97%E8%A1%A8.md#javajee核心组件"><SVG 
+href=""><SVG 
 aria-hidden=true class="octicon octicon-link" height="16" version="1.1" 
 viewbox="0 0 16 16" width="16"><PATH 
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></PATH></SVG></A>Java/JEE核心组件 
@@ -488,7 +483,7 @@ style="BOX-SIZING: border-box; OVERFLOW: auto; MARGIN-BOTTOM: 16px; FONT-SIZE: 1
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; BORDER-BOTTOM: rgb(238,238,238) 1px solid; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0.3em; MARGIN-TOP: 24px; LINE-HEIGHT: 1.25"><A 
 aria-hidden=true id=user-content-web前端类组件 class=anchor 
 style="BOX-SIZING: border-box; FLOAT: left; COLOR: rgb(64,120,192); MARGIN-LEFT: -20px; TEXT-DECORATION: none; LINE-HEIGHT: 1; PADDING-RIGHT: 4px; BACKGROUND-COLOR: transparent" 
-href="https://github.com/xautlx/s2jh4net/blob/master/src/main/webapp/docs/markdown/%E6%8A%80%E6%9C%AF%E5%88%97%E8%A1%A8.md#web前端类组件"><SVG 
+href=""><SVG 
 aria-hidden=true class="octicon octicon-link" height="16" version="1.1" 
 viewbox="0 0 16 16" width="16"><PATH 
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></PATH></SVG></A>Web前端类组件 
@@ -612,7 +607,7 @@ style="BOX-SIZING: border-box; OVERFLOW: auto; MARGIN-BOTTOM: 16px; FONT-SIZE: 1
 style="BOX-SIZING: border-box; MARGIN-BOTTOM: 16px; FONT-FAMILY: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; BORDER-BOTTOM: rgb(238,238,238) 1px solid; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0.3em; MARGIN-TOP: 24px; LINE-HEIGHT: 1.25"><A 
 aria-hidden=true id=user-content-工具类组件 class=anchor 
 style="BOX-SIZING: border-box; FLOAT: left; COLOR: rgb(64,120,192); MARGIN-LEFT: -20px; TEXT-DECORATION: none; LINE-HEIGHT: 1; PADDING-RIGHT: 4px; BACKGROUND-COLOR: transparent" 
-href="https://github.com/xautlx/s2jh4net/blob/master/src/main/webapp/docs/markdown/%E6%8A%80%E6%9C%AF%E5%88%97%E8%A1%A8.md#工具类组件"><SVG 
+href=""><SVG 
 aria-hidden=true class="octicon octicon-link" height="16" version="1.1" 
 viewbox="0 0 16 16" width="16"><PATH 
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></PATH></SVG></A>工具类组件 
@@ -782,4 +777,3 @@ style="BOX-SIZING: border-box; OVERFLOW: auto; MARGIN-BOTTOM: 0px !important; FO
       style="BOX-SIZING: border-box; COLOR: rgb(64,120,192); TEXT-DECORATION: none; BACKGROUND-COLOR: transparent" 
       href="http://jenkins-ci.org/">http://jenkins-ci.org/</A> 
 </TD></TR></TBODY></TABLE></DIV></BODY></HTML>
-
